@@ -1,0 +1,125 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CalculatorControlLibrary
+</name>
+</assembly>
+<members>
+<member name="T:CalculatorControlLibrary.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:CalculatorControlLibrary.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:CalculatorControlLibrary.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:CalculatorControlLibrary.Base10NumberSystem">
+ <summary>
+ The mathematical numbering system Base10.
+ </summary>
+</member>
+<member name="T:CalculatorControlLibrary.BinaryNumberSystem">
+ <summary>
+ The mathematical numbering system Binary.
+ </summary>
+</member>
+<member name="T:CalculatorControlLibrary.HexadecimalNumberSystem">
+ <summary>
+ The mathematical numbering system Hexadecimal.
+ </summary>
+</member>
+<member name="T:CalculatorControlLibrary.NumberingSystem">
+ <summary>
+ The Numbering System which defines a basic calculator number screen.
+ </summary>
+ Mark Must Inherit
+</member>
+<member name="P:CalculatorControlLibrary.NumberingSystem.UpdateInput">
+ <summary>
+ Tells whether data in answer textbox is old or new.
+ </summary>
+ <returns>True if the user has updated the answer text box by entering input, false otherwise</returns>
+</member>
+<member name="M:CalculatorControlLibrary.NumberingSystem.ExpressionEndsInOperation(System.String)">
+ <summary>
+ Determines whether the mathematical expression ends in a mathematical operation
+ </summary>
+ <param name="sPhrase">the mathematical expression to check</param>
+ <returns>True if the mathematical expression ends in an operation, false otherwise</returns>
+</member>
+<member name="M:CalculatorControlLibrary.NumberingSystem.ClearCurrentEvaluation">
+ <summary>
+ Clears the current evaluation (evaluation history AND current answer)
+ </summary>
+</member>
+<member name="M:CalculatorControlLibrary.NumberingSystem.Clear">
+ <summary>
+ Clears the user input history, current answer, and all evaluation history
+ </summary>
+</member>
+<member name="M:CalculatorControlLibrary.NumberingSystem.ClearEvaluationHistory">
+ <summary>
+ Clears only the current evaluation history
+ </summary>
+</member>
+<member name="M:CalculatorControlLibrary.NumberingSystem.ClearAnswer">
+ <summary>
+ Clears the answer text ( resets to 0 ) and readys for new input.
+ </summary>
+</member>
+<member name="M:CalculatorControlLibrary.NumberingSystem.ClearHistory">
+ <summary>
+ Clears all previous evaluation history in listview.
+ </summary>
+</member>
+<member name="M:CalculatorControlLibrary.NumberingSystem.AddInputToAnswerBox(System.String)">
+ <summary>
+ Adds the specified input to the answer text box.
+ </summary>
+ <param name="sInput">Input from the key/button pressed/clicked by the user</param>
+</member>
+<member name="M:CalculatorControlLibrary.NumberingSystem.RemoveLastNumber">
+ <summary>
+ Removes the last number in the answer
+ </summary>
+</member>
+<member name="M:CalculatorControlLibrary.NumberingSystem.AddAnOperation(System.String)">
+ <summary>
+ Adds an operation to the evaluation then waits for input.
+ </summary>
+ <param name="sOperation"></param>
+</member>
+<member name="M:CalculatorControlLibrary.NumberingSystem.NumberingSystem_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ Process input when the user presses a key
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:CalculatorControlLibrary.NumberingSystem.Evaluate(System.String)">
+ <summary>
+ Evaluates the mathematical expression in the current evaluation.
+ </summary>
+ Mark Must Override
+</member>
+<member name="T:CalculatorControlLibrary.OctalNumberSystem">
+ <summary>
+ The mathematical numbering system Octal.
+ </summary>
+</member>
+<member name="M:CalculatorControlLibrary.OctalNumberSystem.btnEquals_Click(System.Object,System.EventArgs)">
+ <summary>
+ Evaluates the expression in the current user input history.
+ </summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Calculator
+</name>
+</assembly>
+<members>
+<member name="T:Calculator.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Calculator.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Calculator.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:Calculator.MainWindow">
+ <summary>
+ The main form window for the Calculator application.
+ </summary>
+</member>
+<member name="T:Calculator.MainWindow.NumberSystem">
+ <summary>
+ Defines the NumberSystems usable in the MainWindow.
+ </summary>
+</member>
+<member name="M:Calculator.MainWindow.#ctor">
+ <summary>
+ Creates the MainWindow instance.
+ </summary>
+</member>
+</members>
+</doc>
