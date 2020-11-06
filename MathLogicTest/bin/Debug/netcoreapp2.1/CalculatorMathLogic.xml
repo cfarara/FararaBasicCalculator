@@ -1,0 +1,128 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CalculatorMathLogic
+</name>
+</assembly>
+<members>
+<member name="T:CalculatorMathLogic.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:CalculatorMathLogic.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:CalculatorMathLogic.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:CalculatorMathLogic.MathLogic">
+ <summary>
+ Math Logic processes mathetical expressions.
+ </summary>
+</member>
+<member name="F:CalculatorMathLogic.MathLogic.ADD_OPERATION">
+ <summary>
+ The addition operation sign
+ </summary>
+</member>
+<member name="F:CalculatorMathLogic.MathLogic.MINUS_OPERATION">
+ <summary>
+ the minus operation sign
+ </summary>
+</member>
+<member name="F:CalculatorMathLogic.MathLogic.MULTIPLY_OPERATION">
+ <summary>
+ The multiplication operation sign
+ </summary>
+</member>
+<member name="F:CalculatorMathLogic.MathLogic.DIVISION_OPERATION">
+ <summary>
+ The division operation sign
+ </summary>
+</member>
+<member name="F:CalculatorMathLogic.MathLogic.dctBase31">
+ <summary>
+ Defines each Character in the Base31 Number System
+ </summary>
+</member>
+<member name="M:CalculatorMathLogic.MathLogic.SolveEquationBase10(System.String)">
+ <summary>
+ Solves the specified equation using the Base10 Number System
+ </summary>
+ <param name="sEquation">the equation which to solve</param>
+ <returns>the answer to the equation</returns>
+</member>
+<member name="M:CalculatorMathLogic.MathLogic.DoApprpriateOperation(System.String,System.Int64,System.Int64)">
+ <summary>
+ Determines which mathematical operation to operate based on the specified operation
+ </summary>
+ <param name="operation">The operation to do</param>
+ <param name="iNum1">the first number</param>
+ <param name="iNum2">the second number</param>
+ <returns>the answer derived from the specified operation and num1 and num2</returns>
+</member>
+<member name="M:CalculatorMathLogic.MathLogic.SolveEquationBinary(System.String)">
+ <summary>
+ Solves the specified equation using the Binary Number System
+ </summary>
+ <param name="equation"></param>
+ <returns>the answer to the equation</returns>
+</member>
+<member name="M:CalculatorMathLogic.MathLogic.BinaryToInt(System.String)">
+ <summary>
+ Converts a binary string to an Integer
+ </summary>
+ <param name="sBinaryNumber">the string binary to convert</param>
+ <returns>The integer representation of the binary string</returns>
+</member>
+<member name="M:CalculatorMathLogic.MathLogic.IntegerToBinary(System.Int64)">
+ <summary>
+ Converts a Integer into a binary string
+ </summary>
+ <param name="lIntegerNumber">the Integer to convert to binary string</param>
+ <returns>the binary string representation of the Integer</returns>
+</member>
+<member name="M:CalculatorMathLogic.MathLogic.SolveEquationOctal(System.String)">
+ <summary>
+ Solves the specified equation using the Octal Number System
+ </summary>
+ <param name="sEquation">the equation to solve</param>
+ <returns></returns>
+</member>
+<member name="M:CalculatorMathLogic.MathLogic.ConvertStringOctalToInt(System.String)">
+ <summary>
+ Converts an octal string into an Integer
+ </summary>
+ <param name="sNumber">the octal string to convert</param>
+ <returns>the integer representation of the octal string</returns>
+</member>
+<member name="M:CalculatorMathLogic.MathLogic.IntToOctal(System.Int64)">
+ <summary>
+ Converts an Integer into an octal string 
+ </summary>
+ <param name="lNumberToConvert">the integer to convert</param>
+ <returns></returns>
+</member>
+<member name="M:CalculatorMathLogic.MathLogic.SolveEquationHexadecimal(System.String)">
+ <summary>
+ Solves the specified equation using the Hexadecimal Number System
+ </summary>
+ <param name="sEquation">the specified equation</param>
+ <returns>the answer to the equation</returns>
+</member>
+<member name="M:CalculatorMathLogic.MathLogic.SolveEquationBase31(System.String)">
+ <summary>
+ Solves the specified equation using the Base31 Number System
+ </summary>
+ <param name="sEquation">the specified equation</param>
+ <returns>the answer tot he equation</returns>
+</member>
+</members>
+</doc>
